@@ -15,9 +15,16 @@ header{
 }
 .headerAreaOne{
     display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px;
+}
+.headerAreaOneServices{
+    display: flex;
     flex-wrap: wrap;
     justify-items: center;
-    gap: 12;
+    gap: 12px;
+    padding:0 8px
 }
 .headerText{
     color: white;
