@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    max-width: 1200px;
+    margin: auto;
+}
+header{
+    background-color: hsl(213, 87%, 31%);
+    display: grid;
+    grid-template-columns: 80% auto;
+    gap: 12px;
+}
+.headerAreaOne{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    gap: 12;
+}
+.headerText{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
