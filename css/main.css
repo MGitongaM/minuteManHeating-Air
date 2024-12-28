@@ -11,7 +11,12 @@ header{
 main{
     max-width: 1200px;
     margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .headerAreaOne{
     display: flex;
@@ -22,35 +27,60 @@ main{
 .headerAreaOneServices{
     display: flex;
     flex-wrap: wrap;
-    justify-items: center;
+    justify-content: center;
     gap: 12px;
     padding:0 8px
+}
+.headerLink{
+    display: grid;
+    place-items: center;
+    gap: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.headerLink:hover{
+    font-size:18px ;
+    transition: 0.3s;
 }
 .headerText{
     color: white;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 18px;
 }
 .serviceSection{
     padding: 24px 12px;
 }
 .serviceAreaH1{
     font-size: 48px;
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
     color: hsl(0, 64%, 29%);
     text-transform: uppercase;
 }
 .serviceAreaOne{
-    display: flex;
-    justify-content: center;
-    gap: 12px;
+    display: grid;
+    grid-template-columns: 12;
+    gap: 14px;
+}
+.seriveAreaDiv1{
+    grid-column: 1/4;
+}
+.seriveAreaDiv2{
+    grid-column: 6/12;
 }
 .serviceAreaOneText1{
+    font-size: 14px;
     line-height: 24px;
+    padding-bottom: 42px;
+    color:#524f4f
     
 }
 .serviceAreaOneTextSpan{
     font-weight: 900;
+    color:#383636;
 }
 .serviceAreaOneList{
     list-style: none;
@@ -59,49 +89,89 @@ main{
 .serviceAreaOneList>li>a{
     color: #ab3c3c;
     text-decoration: none;
+    line-height: 26px;
+}
+.serviceAreaOneList>li>a:hover{
+    font-size:17px ;
+    transition: 0.3s;
 }
 .articlesSection{
     padding: 24px 12px;
 }
 .articlesSectionH2{
-    font-size: 28px;
+    font-size: 40px;
+    font-family: "Roboto Slab", serif;
     color: hsl(0, 64%, 29%);
 }
 .articlesDisplay{
     display: flex;
-    gap: 16px;
+    gap: 56px;
     padding: 24px 0;
 }
 .articleDiv{
     display: flex;
     flex-direction: column;
-    /* width: 30%; */
+    flex-grow: 1;
     gap: 12px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #314b57;
+    line-height: 24px;
 }
-.articleDiv>a{
+.articleDiv>span{
     color: #ab3c3c;
     text-decoration: underline;
+    text-underline-offset: 4px;
     
 }
-@media screen and (max-width:810px) {
+.articleDiv>span:hover{
+    font-size: 17px;
+    transition: 0.3s;
+
+}
+@media screen and (max-width:768px){
     header{
+        /* display: flex; */
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .headerText{
+        text-align: center;
+        padding-bottom: 12px;
+    }
+    .serviceAreaH1{
+        font-size: 36px;
+    }
+    .seriveAreaDiv1{
+        grid-column: 1/6;
+    }
+    .seriveAreaDiv2{
+        grid-column: 7/12;
+    }
+    .articlesSectionH2{
+        font-size:28px ;
+    }
+}
+
+@media screen and (max-width:428px) {
+  
+    .headerLink{
+        font-size: 12px;
+        gap:2px;
+    }
+    .headerAreaOneServices>a>img{
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+    }
+
+    .serviceAreaOne{
         display: flex;
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
     }
     .articlesDisplay{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-}
-@media screen and (max-width:428px) {
-    .serviceAreaOne{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    /* .articlesDisplay{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    } */
 }
