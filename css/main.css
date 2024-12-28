@@ -91,9 +91,10 @@ img{
     color: #ab3c3c;
     text-decoration: none;
     line-height: 26px;
+    font-size: 14px;
 }
 .serviceAreaOneList>li>a:hover{
-    font-size:17px ;
+    font-size:15px ;
     transition: 0.3s;
 }
 .articlesSection{
