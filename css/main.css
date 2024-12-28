@@ -7,6 +7,7 @@ header{
     background-color: #314b57;
     display: flex;
     justify-content: center;
+    font-family: Helvetica, Arial
 }
 main{
     max-width: 1200px;
@@ -39,10 +40,10 @@ img{
     text-transform: uppercase;
     color:white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
 }
 .headerLink:hover{
-    font-size:18px ;
+    font-size:14px ;
     transition: 0.3s;
 }
 .headerText{
