@@ -6,6 +6,7 @@
 main{
     max-width: 1200px;
     margin: auto;
+    font-family: sans-serif;
 }
 header{
     background-color: hsl(213, 87%, 31%);
@@ -30,4 +31,56 @@ header{
     color: white;
     text-transform: uppercase;
     font-weight: bold;
+}
+.serviceSection{
+    padding: 24px 12px;
+}
+.serviceAreaH1{
+    font-size: 48px;
+    color: hsl(0, 64%, 29%);
+    text-transform: uppercase;
+}
+.serviceAreaOne{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.serviceAreaOneText1{
+    line-height: 24px;
+}
+.serviceAreaOneTextSpan{
+    font-weight: 900;
+}
+.serviceAreaOneList{
+    list-style: none;
+    ;
+}
+.serviceAreaOneList>li>a{
+    color: hsl(0, 51%, 35%);
+    text-decoration: none;
+}
+.articlesSection{
+    padding: 24px 12px;
+}
+.articlesSectionH2{
+    font-size: 28px;
+    color: hsl(0, 64%, 29%);
+}
+.articlesDisplay{
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 24px 0;
+}
+.articleDiv{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 12px;
+}
+.articleDiv>a{
+    color: hsl(0, 51%, 35%);
+    text-decoration: underline;
+    
 }
